@@ -1,7 +1,7 @@
 {
     "version": 1,
     "data": {
-        "enabled": true,
+        "enabled": false,
         "sendNotices": true,
         "showItems": true,
         "showOnlyLakanMech": false
