@@ -1,5 +1,5 @@
 {
-    "disableAutoUpdate": false,
+    "disableAutoUpdate": true,
     "name": "vs-guide",
     "author": "teralove",
     "description": "Guide for Velik's Sanctuary",
