@@ -158,7 +158,7 @@ module.exports = function VSGuide(mod) {
     
 	function sendMessage(msg) {
 		if(mod.settings.sendNotices) {
-			mod.send('S_CHAT', 2, {
+			mod.send('S_CHAT', 3, {
                 channel: 21, //21 = p-notice, 1 = party
                 authorName: 'DG-Guide',
                 message: msg
@@ -291,7 +291,7 @@ module.exports = function VSGuide(mod) {
                 }
             });
             
-            hook('S_ACTION_STAGE', 8, (event) => {         
+            hook('S_ACTION_STAGE', 9, (event) => {         
                 if (!bossInfo) return;
                 if (event.stage != 0) return;
                 if (mod.settings.showOnlyLakanMech && ![1404, 3103, 1301, 1405, 3105, 1302, 1304, 1401, 1402].includes(event.skill.id)) return;
