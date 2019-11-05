@@ -130,7 +130,7 @@ module.exports = function VSGuide(mod) {
             }
             mod.command.message('Use Notices: ' + (mod.settings.sendNotices ? 'Enabled'.clr('56B4E9') : 'Disabled'.clr('E69F00')));
         }
-        { else if(["lakan"].includes(arg))
+        else if(["lakan"].includes(arg))
         {
             if (arg2 === "off") {
                 mod.settings.showOnlyLakanMech = false;
